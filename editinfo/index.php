@@ -7,7 +7,7 @@ session_start();
   //edit someone
   try
   {
-    $sql = 'SELECT * FROM User_Info WHERE userid = :userid';
+    $sql = 'SELECT * FROM user_info WHERE userid = :userid';
     $s = $pdo->prepare($sql);
     $s->bindValue(':userid', $_SESSION["userid"]);
     $s->execute();
@@ -40,15 +40,15 @@ if (isset($_GET['editform']))
       $userpwd == $_POST['userpwd'] &&
       $phone == $_POST['phone'] &&
       $email == $_POST['email'] &&
-      $address == $_POST['address'] )  $_SESSION["edit"] = " ";
-  else   $_SESSION["edit"] = "Edit info Successful!!";
+      $address == $_POST['address'] )  $_SESSION["states"] = " ";
+  else   $_SESSION["states"] = "Edit info Successful!!";
 
 
 //check input configpwd
 
   try
   {
-    $sql = 'UPDATE User_Info SET
+    $sql = 'UPDATE user_info SET
         username = :username,
         userpwd = :userpwd,
         phone = :phone,

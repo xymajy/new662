@@ -8,7 +8,7 @@
 	if(!$UID) header("Location:http://localhost/index.php");
 	try
 	{
-	$sql = 'SELECT * FROM User_Info WHERE userid = :userid';
+	$sql = 'SELECT * FROM user_info WHERE userid = :userid';
 	$s = $pdo->prepare($sql);
 	$s->bindValue(':userid',$UID);	
 	$s->execute();
@@ -29,7 +29,7 @@
 
 	try
 	{
-	$sql = 'SELECT * FROM Work_Info INNER JOIN Time_Info ON Time_Info.timeid = Work_Info.timeid WHERE userid = :userid';
+	$sql = 'SELECT * FROM work_info INNER JOIN time_info ON time_info.timeid = work_info.timeid WHERE userid = :userid';
 	$s = $pdo->prepare($sql);
 	$s->bindValue(':userid',$UID);	
 	$s->execute();

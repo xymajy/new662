@@ -8,9 +8,9 @@
   </head>
   <body>
     <h1><?php htmlout($pageTitle); ?></h1>
-    <?php  echo $_SESSION["edit"];  $_SESSION["edit"] = ""; ?>
+    <?php  echo $_SESSION["states"];  $_SESSION["states"] = ""; ?>
     <form action="?<?php htmlout($action); ?>" method="post">
-      <?php echo $state ?>
+
       <div>
         <label for="userid">userid: <input type="text" name="userid"
             id="userid" value="<?php htmlout($id); ?>"  disabled></label>

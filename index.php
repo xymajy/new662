@@ -21,7 +21,7 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 	$s->bindValue(':name',$_POST['my_login_name']);
 	$s->bindValue(':age',$_POST['my_login2_name']);	
 	$s->execute();*/
-	$sql = 'SELECT userid FROM User_Info WHERE userid = :userid AND userpwd = :userpwd';
+	$sql = 'SELECT userid FROM user_info WHERE userid = :userid AND userpwd = :userpwd';
 	$s = $pdo->prepare($sql);
 	$s->bindValue(':userid',$_POST['login_name']);	
 	$s->bindValue(':userpwd',$_POST['login_psw']);	

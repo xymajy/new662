@@ -5,11 +5,11 @@
 <script type="text/javascript">
 function Cancle()
 {
-document.form.action="cancle.php";  
+document.form.action="/cancle";  
 }
 function Change()
 {
-document.form.action="change.php";
+document.form.action="/change";
 }
 
 </script>
