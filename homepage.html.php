@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
 <script type="text/javascript">
-function Cancle()
+function Application()
 {
-document.form.action="/cancle";  
+document.form.action="/application";  
 }
-function Change()
+function Switch()
 {
-document.form.action="/change";
+document.form.action="/switch";
 }
 
 </script>
@@ -29,8 +29,8 @@ document.form.action="/change";
 
 
 <form name="form" method="post">
-<input type="submit" value="Cancle" onclick="Cancle()" />
-<input type="submit" value="Change" onclick="Change()" />
+<input type="submit" value="application" onclick="Application()" />
+<input type="submit" value="switch" onclick="Switch()" />
 </form>
 
 
