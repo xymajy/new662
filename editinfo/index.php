@@ -68,11 +68,11 @@ if (isset($_GET['editform']))
   catch (PDOException $e)
   {
     $error = 'Error updating submitted user.';
-    include 'error.html.php';
+    include '/error.html.php';
     exit();
   }
 
-  header('Location: /editinfo');
+  header('Location: .');
 
   //header('Location: http://localhost/editinfosuc.php');
   // exit();

@@ -20,7 +20,7 @@ session_start();
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location:http://localhost/error.html.php");
+	header("Location: /error.html.php");
 	exit(); 
 	}
 	$rows = $row = array();

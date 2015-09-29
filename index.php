@@ -29,7 +29,7 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location:http://localhost/error.html.php");
+	header("Location: error.html.php");
 	exit(); 
 	}
 	$row = $s->fetch();
@@ -40,7 +40,7 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 		$_SESSION["userid"] = $row['userid'];
 		//header("Location:http://localhost/showsomething.php");
 
-		header("Location:http://localhost/homepage.php");
+		header("Location: dashboard");
 
 	}else{
 		$loginfo = "Fail login";

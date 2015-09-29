@@ -5,7 +5,7 @@
 
 	$UID = $_SESSION["userid"];
 
-	if(!$UID) header("Location: ..");
+	if(!$UID) header("Location: index.php");
 	try
 	{
 	$sql = 'SELECT * FROM user_info WHERE userid = :userid';
@@ -15,7 +15,7 @@
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location: /error.html.php");
+	header("Location: error.html.php");
 	exit(); 
 	}
 
@@ -36,7 +36,7 @@
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location: /error.html.php");
+	header("Location: error.html.php");
 	exit(); 
 	}
 	echo "<br>" . "work time:" . "<br>"; 

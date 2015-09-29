@@ -8,7 +8,7 @@
   <body>
     <p>This is application page</p>
 <?php  echo $_SESSION["states"]; $_SESSION["states"] = ""; ?>
-  <form action="/homepage.php" method="post">
+  <form action=" /dashboard" method="post">
   <button type="submit"  name="action" value="0">Back</button>
   </form>
   
