@@ -40,7 +40,7 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 		$_SESSION["userid"] = $row['userid'];
 		//header("Location:http://localhost/showsomething.php");
 
-		header("Location: dashboard");
+		header("Location: /dashboard");
 
 	}else{
 		$loginfo = "Fail login";
