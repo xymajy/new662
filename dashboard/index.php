@@ -15,7 +15,7 @@
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location: error.html.php");
+	header("Location: /includes/error.html.php");
 	exit(); 
 	}
 
@@ -36,7 +36,7 @@
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location: error.html.php");
+	header("Location: /includes/error.html.php");
 	exit(); 
 	}
 	echo "<br>" . "work time:" . "<br>"; 

@@ -43,7 +43,7 @@
         <input type="submit" value="<?php htmlout($button); ?>">
       </div>
     </form>
-  <form action=" /dashboard " method="post">
+  <form action=" ../dashboard " method="post">
   <button type="submit"  name="action" value="0">Back</button>
   </form>
   </body>

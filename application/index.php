@@ -20,7 +20,7 @@ session_start();
 	}
 	catch (PDOException $e){
 	$error = 'Error select.';
-	header("Location: /error.html.php");
+	header("Location: /includes/error.html.php");
 	exit(); 
 	}
 	$rows = $row = array();
@@ -49,11 +49,11 @@ session_start();
 		}
 		catch (PDOException $e){
 		$error = 'Error select.';
-		header("Location:http://localhost/error.html.php");
+		header("Location: /includes/error.html.php");
 		exit(); 
 		}
 
-	  header('Location: /application');
+	  header('Location: .');
 	}
 
 ?>

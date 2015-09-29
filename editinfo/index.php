@@ -15,7 +15,7 @@ session_start();
   catch (PDOException $e)
   {
     $error = 'Error fetching user details.';
-    include 'error.html.php';
+    include '/includes/error.html.php';
     exit();
   }
   $row = $s->fetch();
@@ -68,7 +68,7 @@ if (isset($_GET['editform']))
   catch (PDOException $e)
   {
     $error = 'Error updating submitted user.';
-    include '/error.html.php';
+    include '/includes/error.html.php';
     exit();
   }
 

@@ -5,11 +5,11 @@
 <script type="text/javascript">
 function Application()
 {
-document.form.action=" /application";  
+document.form.action=" ../application";  
 }
 function Switch()
 {
-document.form.action=" /switch";
+document.form.action=" ../switch";
 }
 
 </script>
@@ -19,7 +19,7 @@ document.form.action=" /switch";
     <p>home page</p>
         <p>
 
-<form action=" /editinfo" method="post">
+<form action=" ../editinfo" method="post">
 <button type="submit"  name="action" value="0">Edit</button>
 </form>
 		<?php 
