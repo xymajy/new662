@@ -39,8 +39,10 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 	if($row['userid']){
 		$_SESSION["userid"] = $row['userid'];
 		//header("Location:http://localhost/showsomething.php");
-
-		header("Location: ./dashboard");
+		if(test_input($_POST['login_psw']) == '123456'){
+			$_SESSION["firstlogin"] = "You need to edit your information first!";
+			header("Location: ./editinfo/newuser.php");
+		}else header("Location: ./dashboard");
 
 	}else{
 		$loginfo = "Fail login";
@@ -48,6 +50,15 @@ if(isset($_POST['action']) and $_POST['action'] == 'Signin'){
 	}
 }
 include 'login.html.php';
+
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+
+
 ?>
 
 
