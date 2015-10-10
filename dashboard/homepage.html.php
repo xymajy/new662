@@ -22,6 +22,7 @@ document.form.action=" ../switch";
 <form action=" ../editinfo" method="post">
 <button type="submit"  name="action" value="0">Edit</button>
 </form>
+
 		<?php 
       echo "<br>" . "here is home page" . "<br>";
       echo "end" . "<br>";
@@ -31,6 +32,11 @@ document.form.action=" ../switch";
 <form name="form" method="post">
 <input type="submit" value=" application" onclick="Application()" />
 <input type="submit" value=" switch" onclick="Switch()" />
+</form>
+<br><br><br>
+
+<form action="" method="post">
+<button type="submit"  name="action" value="logout">Logout</button>
 </form>
 
 

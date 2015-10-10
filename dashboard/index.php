@@ -6,6 +6,9 @@
 	$UID = $_SESSION["userid"];
 
 	if(!$UID) header("Location: index.php");
+
+    echo $_SESSION["status"] . "<br>"; $_SESSION["status"] = "";
+
 	try
 	{
 	$sql = 'SELECT * FROM user_info WHERE userid = :userid';
@@ -46,5 +49,13 @@
 
     include 'homepage.html.php';
 
+if(isset($_POST['action']) and $_POST['action'] == 'logout'){
+  	
+	session_destroy();	// close the session
+
+	header("Location: ..");	//return to login page
+
+
+}
 
 ?>	

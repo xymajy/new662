@@ -7,7 +7,7 @@
   <body>
 <!--     <p>Now it is my login page</p> -->
     <h4 style="font-family:verdana">Now it is my login page
-    <?php echo $loginfo; $loginfo = ""; ?>
+    <?php echo $_SESSION["logintimes"]; $_SESSION["logintimes"] = ""; ?>
     <form action="" method="post">
       <blockquote>
         <p>

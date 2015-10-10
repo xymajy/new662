@@ -11,23 +11,9 @@
   </head>
   <body>
     <h1><?php htmlout($pageTitle); ?></h1>
-
-
-<div style="width:120px; height:120px; border-radius:50%; overflow:hidden;">
-<img src="<?php echo $icon; ?>" onload='if (this.width>140 || this.height>226) if (this.width/this.height>140/226) this.width=140; else this.height=226;' alt = "<?php echo htmlout($id)."'s icon"; ?>"  />
-</div>
-
-<form action="?<?php htmlout($changeicon); ?>" method="post" enctype="multipart/form-data">
-    Select image to change icon:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
-<?php  echo $_SESSION["states2"];  $_SESSION["states2"] = " "; ?>
-<br><br><br>
-
     <?php  echo $_SESSION["firstlogin"];  $_SESSION["firstlogin"] = ""; ?>
     <?php  echo $_SESSION["states"];  $_SESSION["states"] = ""; ?>
-    <form action="?<?php htmlout($editform); ?>" method="post">
+    <form action="?<?php htmlout($action); ?>" method="post">
 
       <div>
         <label for="userid">userid: <input type="text" name="userid"
@@ -66,11 +52,6 @@
         <input type="submit" value="<?php htmlout($button); ?>">
       </div>
     </form>
-  <form action=" ../dashboard " method="post">
-  <button type="submit"  name="action" value="0">Back</button>
-  </form>
-
-<br><br><br>
-
+  
   </body>
 </html>
