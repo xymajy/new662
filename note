@@ -1,0 +1,6 @@
+1 group id from known group id
+2 defualt pwd is 123456 used for first login
+3 defualt position is staff
+4 when creating a group, first person in this group must be leader
+5 change the group member to another group, this guy should not be a leader
+6  
