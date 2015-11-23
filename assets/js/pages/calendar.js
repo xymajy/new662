@@ -20,7 +20,6 @@
 				revert: true,      // will cause the event to go back to its
 				revertDuration: 0  //  original position after the drag
 			});
-
 		});
 	};
 
@@ -32,6 +31,7 @@
 		var y = date.getFullYear();
 
 		$calendar.fullCalendar({
+			height: 300,
 			header: {
 				left: 'title',
 				right: 'prev,today,next,basicDay,basicWeek,month'
@@ -44,8 +44,8 @@
 				next: 'fa fa-caret-right',
 			},
 
-			editable: true,
-			droppable: true, // this allows things to be dropped onto the calendar !!!
+			editable: false,
+			droppable: false, // this allows things to be dropped onto the calendar !!!
 			drop: function(date, allDay) { // this function is called when something is dropped
 				var $externalEvent = $(this);
 				// retrieve the dropped element's stored Event Object
@@ -70,53 +70,53 @@
 				}
 
 			},
-			events: [
-				{
-					title: 'All Day Event',
-					start: new Date(y, m, 5)
-				},
-				{
-					title: 'Long Event',
-					start: new Date(y, m, d-6),
-					end: new Date(y, m, d-1)
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d-4, 17, 0),
-					allDay: false
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d+10, 16, 0),
-					allDay: false
-				},
-				{
-					title: 'Meeting',
-					start: new Date(y, m, d, 9, 29),
-					allDay: false
-				},
-				{
-					title: 'Lunch',
-					start: new Date(y, m, d, 11, 0),
-					end: new Date(y, m, d, 13, 0),
-					allDay: false,
-					className: 'fc-event-danger'
-				},
-				{
-					title: 'Birthday Party',
-					start: new Date(y, m, d+2, 20, 0),
-					end: new Date(y, m, d+2, 23, 30),
-					allDay: false
-				},
-				{
-					title: 'Click for Google',
-					start: new Date(y, m, 27),
-					end: new Date(y, m, 28),
-					url: 'http://google.com/'
-				}
-			]
+			// events: [
+			// 	// {
+			// 	// 	title: 'Fallout 4 release',
+			// 	// 	start: new Date(y, m, d)
+			// 	// },
+			// 	// {
+			// 	// 	title: 'Long Event',
+			// 	// 	start: new Date(y, m, d-6),
+			// 	// 	end: new Date(y, m, d-1)
+			// 	// },
+			// 	// {
+			// 	// 	id: 999,
+			// 	// 	title: 'Repeating Event',
+			// 	// 	start: new Date(y, m, d-4, 17, 0),
+			// 	// 	allDay: false
+			// 	// },
+			// 	// {
+			// 	// 	id: 999,
+			// 	// 	title: 'Repeating Event',
+			// 	// 	start: new Date(y, m, d+10, 16, 0),
+			// 	// 	allDay: false
+			// 	// },
+			// 	// {
+			// 	// 	title: 'Meeting',
+			// 	// 	start: new Date(y, m, d, 9, 29),
+			// 	// 	allDay: false
+			// 	// },
+			// 	// {
+			// 	// 	title: 'Lunch',
+			// 	// 	start: new Date(y, m, d, 11, 0),
+			// 	// 	end: new Date(y, m, d, 13, 0),
+			// 	// 	allDay: false,
+			// 	// 	className: 'fc-event-danger'
+			// 	// },
+			// 	// {
+			// 	// 	title: 'Birthday Party',
+			// 	// 	start: new Date(y, m, d+2, 20, 0),
+			// 	// 	end: new Date(y, m, d+2, 23, 30),
+			// 	// 	allDay: false
+			// 	// },
+			// 	{
+			// 		title: 'Click for Google',
+			// 		start: new Date(y, m, 27),
+			// 		end: new Date(y, m, 28),
+			// 		url: 'http://google.com/'
+			// 	}
+			// ]
 		});
 
 		// FIX INPUTS TO BOOTSTRAP VERSIONS

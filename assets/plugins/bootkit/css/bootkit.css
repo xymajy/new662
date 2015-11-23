@@ -238,13 +238,13 @@
 .fa-4x { font-size: 4em; }
 .fa-5x { font-size: 5em; } //also used for minimum compilation*/
 .bk-border-primary {
-  border: 1px solid #34495E !important;
+  border: 1px solid #F66733 !important;
 }
 a:not(.btn).bk-border-primary.bk-border-darken:hover {
   border: 1px solid #1e74c5;
 }
 a:not(.btn).bk-border-primary.bk-border-lighten:hover {
-  border: 1px solid #435D78;
+  border: 1px solid #D84F29;
 }
 .bk-border-success {
   border: 1px solid #47a947 !important;
@@ -336,7 +336,7 @@ a:hover .bk-border-primary.bk-border-darken {
 }
 a:hover.bk-border-primary.bk-border-lighten,
 a:hover .bk-border-primary.bk-border-lighten {
-  border-color: #435D78 !important;
+  border-color: #D84F29 !important;
 }
 a:hover.bk-border-success.bk-border-darken,
 a:hover .bk-border-success.bk-border-darken {
@@ -480,7 +480,7 @@ a:not(.btn).bk-bg-very-light-gray.bk-bg-lighten:hover {
   background-color: #dddddd;
 }
 .bk-bg-primary {
-  background-color: #34495E !important;
+  background-color: #F66733 !important;
   color: #ffffff;
 }
 .bk-bg-primary.bk-bg-darken a:not(.btn) {
@@ -496,7 +496,7 @@ a:not(.btn).bk-bg-primary.bk-bg-darken:hover {
 }
 a:not(.btn).bk-bg-primary.bk-bg-lighten:hover {
   color: #ffffff;
-  background-color: #ffffff !important;
+  background-color: #123123 !important;
   text-decoration: none;
 }
 .bk-bg-primary-darker {
@@ -598,10 +598,10 @@ a [class*="bk-bg-"]:not([class="bk-bg-darken"]):not([class="bk-bg-lighten"]) {
   transition: background 0.3s ease 0s;
 }
 a:hover .bk-bg-primary.bk-bg-darken {
-  background-color: #435D78 !important;
+  background-color: #D84F29 !important;
 }
 a:hover .bk-bg-primary.bk-bg-lighten {
-  background-color: #34495E !important;
+  background-color: #F66733 !important;
 }
 a:hover .bk-bg-success.bk-bg-darken {
   background-color: #388538 !important;
@@ -646,7 +646,7 @@ a:hover .bk-bg-very-light-gray.bk-bg-lighten {
   background-color: #ffffff !important;
 }
 .bk-fg-primary {
-  color: #34495E !important;
+  color: #F66733 !important;
 }
 a:not(.btn).bk-fg-primary.bk-fg-darken:hover {
   text-decoration: none;
@@ -654,7 +654,7 @@ a:not(.btn).bk-fg-primary.bk-fg-darken:hover {
 }
 a:not(.btn).bk-fg-primary.bk-fg-lighten:hover {
   text-decoration: none;
-  color: #435D78 !important;
+  color: #D84F29 !important;
 }
 .bk-fg-success {
   color: #47a947 !important;
@@ -762,7 +762,7 @@ a:hover .bk-fg-primary.bk-fg-darken {
   color: #1e74c5 !important;
 }
 a:hover .bk-fg-primary.bk-fg-lighten {
-  color: #435D78 !important;
+  color: #D84F29 !important;
 }
 a:hover .bk-fg-success.bk-fg-darken {
   color: #388538 !important;
@@ -1069,7 +1069,7 @@ a.bk-opacity-inverse img {
   padding-top: 44px;
 }
 .bk-hr-primary {
-  border-top: 1px solid #34495E;
+  border-top: 1px solid #F66733;
 }
 .bk-hr-success {
   border-top: 1px solid #47a947;
